@@ -1,1 +1,12 @@
 <h1><%= @student.to_s %></h1>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round">
+  </span>
+</label>
+
+<% if @student.active %>
+        This student is currently active.
+    <% else %>
+        This student is currently inactive.
+    <% end %>
